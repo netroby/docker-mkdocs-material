@@ -3,7 +3,7 @@ LABEL author="ZhiFeng Hu <hufeng1987@gmail.com>"
 
 
 RUN apk update; \
-    apk add python2-dev graphviz ttf-droid ttf-droid-nonlatin curl; \
+    apk add python2-dev py-pip graphviz ttf-droid ttf-droid-nonlatin curl; \
     pip install mkdocs pygments pymdown-extensions  mkdocs-material  \
     curl -L https://sourceforge.net/projects/plantuml/files/plantuml.jar/download -o /usr/bin/plantuml.jar \
     apk del curl 
